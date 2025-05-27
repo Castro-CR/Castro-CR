@@ -2,6 +2,8 @@
 class Curso {
     + id: int
     + nombre: String
+    + horario: Time
+    + links de clases y tareas: String
 }
 
 class Profesor {
