@@ -1,0 +1,25 @@
+@startuml
+class Curso {
+    + id: int
+    + nombre: String
+}
+
+class Profesor {
+    + id: int
+    + nombre: String
+    + apellidos: String
+    + correo: String
+}
+
+class Estudiante {
+    + cédula: int
+    + nombre: String
+    + apellidos: String
+    + correo: String
+    + profesor asignado: String
+}
+
+Curso "1" -- "0..*" Profesor : tiene >
+
+Curso "1" -- "0..*" Estudiante : tiene >
+@enduml
